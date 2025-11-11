@@ -2,14 +2,7 @@
 #include <locale.h>
 #include <math.h>
 double fa(double x);
-void print_table(double (*func)(double), double a, double b, int step) {
-	double step_size = (b - a) / step;
-	printf("Таблица значений:\n");
-	for (int i = 0; i <= step; i++) {
-		double x = a + i * step_size;
-		printf("x = %.4f, y = %.6f\n", x, func(x));
-	}
-}
+
 double fa(double x) {
 	double y;
 	double sum = 0;
